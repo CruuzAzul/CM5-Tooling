@@ -1,0 +1,21 @@
+---
+import Slide from "../../components/Slide.astro";
+import Title from "../../components/Title.astro";
+import Demo from "../../components/Demo.astro";
+import ContinuousIntegration from "./ContinuousIntegration.astro";
+import ContinuousDelivery from "./ContinuousDelivery.astro";
+---
+<section>
+	<Slide>
+		<Title title="Parlons CI/CD" punctuation=" !" style={{
+			justifyContent: "center",
+			fontSize: "5rem"
+		}}/>
+	</Slide>
+
+	<ContinuousIntegration/>
+	<Demo/>
+
+	<ContinuousDelivery/>
+	<Demo/>
+</section>
