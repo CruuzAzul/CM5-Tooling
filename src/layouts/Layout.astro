@@ -8,6 +8,14 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/slides-template/favicon.svg" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-light.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="generator" content={Astro.generator} />
 
 		<title>{title}</title>
@@ -18,16 +26,15 @@ const { title } = Astro.props;
 
 		<script>
 			import Reveal from "reveal.js";
-			import RevealHighlight from "reveal.js/plugin/highlight/highlight";
+			import RevealHighlight from "reveal.js/plugin/highlight/highlight.esm.js";
+			import RevealNotes from "reveal.js/plugin/notes/notes.esm.js";
 
 			Reveal.initialize({
 				transition: "none",
 				history: true,
-				// progress: false,
-				// controls: false,
 				autoAnimateDuration: 0.5,
 				autoAnimateEasing: "cubic-bezier(0.4, 0, 0.2, 1)",
-				// plugins: [RevealHighlight], // use this if you want to show some code
+				plugins: [RevealHighlight, RevealNotes],
 			});
 		</script>
 	</body>
@@ -35,6 +42,18 @@ const { title } = Astro.props;
 
 <style is:global>
 	@import "reveal.js/dist/reveal.css";
-	@import "reveal.js/dist/theme/night.css";
+	@import "reveal.js/dist/theme/white.css";
 	@import "../../src/styles/highlightjs-theme-vs2015.css";
+
+	pre {
+		border-radius: 10px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		font-family: 'Baloo 2', cursive !important;
+	}
 </style>

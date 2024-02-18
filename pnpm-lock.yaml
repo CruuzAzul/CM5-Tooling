@@ -13,6 +13,9 @@ dependencies:
     version: 4.6.1
 
 devDependencies:
+  '@types/reveal.js':
+    specifier: ^4.4.8
+    version: 4.4.8
   sass:
     specifier: 1.69.3
     version: 1.69.3
@@ -843,6 +846,10 @@ packages:
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
     dev: false
+
+  /@types/reveal.js@4.4.8:
+    resolution: {integrity: sha512-ADWVEgRLNVRE+J5yGjFDogsAaeVz+FKRVgvpLk1tgNewocXQd6wuKSknfamCVgZyUY9/IgOlkNKh9a2iIaconA==}
+    dev: true
 
   /@types/unist@2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}

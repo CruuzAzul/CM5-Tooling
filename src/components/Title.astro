@@ -1,0 +1,25 @@
+---
+import React from "react";
+interface Props {
+	title: string;
+	punctuation: string;
+	style?: React.CSSProperties;
+}
+
+const { title, punctuation, style } = Astro.props;
+---
+
+<span
+	style={{
+		display: "flex",
+		justifyContent: "start",
+		alignItems: "center",
+		paddingBottom: "1.5rem",
+		fontWeight: "bold",
+		...style,
+	}}
+>
+    <p>
+      {title}<span style={{ color: "#2ec7cc" }}>{punctuation}</span>
+    </p>
+</span>
