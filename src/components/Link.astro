@@ -1,0 +1,16 @@
+---
+import React from "react";
+interface Props {
+	url: string;
+	text?: string;
+}
+
+const { url, text } = Astro.props;
+---
+
+<a href={url} target="_blank" rel="noopener noreferrer" style={{
+	color: '#2ec7cc',
+	fontWeight: 'bold'
+}}>
+	{text ? text : url }
+</a>
