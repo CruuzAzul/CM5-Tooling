@@ -1,0 +1,63 @@
+---
+import Slide from "../../components/Slide.astro";
+import Title from "../../components/Title.astro";
+import Link from "../../components/Link.astro";
+import IconText from "../../components/IconText.astro";
+---
+
+<Slide>
+	<Title title="Les extensions d'IDE" punctuation="..." style={{
+		justifyContent: "center",
+		fontSize: "5rem"
+	}} />
+
+	<div style={{
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+		gap: "5rem"
+	}}>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" style={{
+			width: "100px"
+		}} />
+		<img src="https://upload.wikimedia.org/wikipedia/commons/7/71/WebStorm_Icon.png" style={{
+			width: "100px"
+		}} />
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/1200px-IntelliJ_IDEA_Icon.svg.png" style={{
+			width: "100px"
+		}} />
+	</div>
+</Slide>
+
+<Slide>
+	<Title title="Les extensions d'IDE" punctuation=" ." />
+	<IconText
+		icon="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1661914858952/Microsoft.VisualStudio.Services.Icons.Default"
+		text="Live Server"
+		description="Serveur web minimaliste avec un système de HMR"
+	/>
+	<br />
+	<Link url="https://ritwickdey.github.io/vscode-live-server/" />
+</Slide>
+
+<Slide>
+	<Title title="Les extensions d'IDE" punctuation=" ." />
+	<IconText
+		icon="https://ecmel.gallerycdn.vsassets.io/extensions/ecmel/vscode-html-css/2.0.9/1706810901404/Microsoft.VisualStudio.Services.Icons.Default"
+		text="HTML CSS Support"
+		description="Extension VSCode qui permet la complétion des attributs dans le code"
+	/>
+	<br />
+	<Link url="https://github.com/ecmel/vscode-html-css" />
+</Slide>
+
+<Slide>
+	<Title title="Les extensions d'IDE" punctuation=" ." />
+	<IconText
+		icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+		text="IntelliSense"
+		description="Fonction d'édition de code, utilisée pour la complétion de code, les informations sur les paramètres... Vous pouvez trouver les exetnsions pour vos languages préférés !"
+	/>
+	<br />
+	<Link url="https://code.visualstudio.com/docs/editor/intellisense" />
+</Slide>

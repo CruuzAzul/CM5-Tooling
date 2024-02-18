@@ -1,0 +1,40 @@
+---
+import React from "react";
+interface Props {
+	icon: any;
+	text?: string;
+	description?: string;
+	style?: React.CSSProperties;
+	styleTitle?: React.CSSProperties;
+}
+
+const { icon, text, description, style, styleTitle } = Astro.props;
+---
+
+<div style={{
+	display: "flex",
+	flexDirection: "column",
+	alignItems: "center",
+	justifyContent: "center",
+	flex: "0 0 25%",
+	gap: "1.5rem",
+	...style
+}}>
+	<img src={icon} alt={icon} style={{
+		maxHeight: "8rem",
+		filter: "drop-shadow(0 0 0.2rem black)",
+	}}
+	/>
+	<h4 style={{
+		fontSize: "2rem",
+		fontWeight: "bold",
+		margin: 0,
+		...styleTitle
+	}}>{text}</h4>
+	{
+		description && <p style={{
+			fontSize: "2rem",
+			margin: 0
+		}}>{description}</p>
+	}
+</div>

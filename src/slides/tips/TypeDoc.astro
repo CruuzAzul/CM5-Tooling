@@ -1,0 +1,82 @@
+---
+import Slide from "../../components/Slide.astro";
+import Link from "../../components/Link.astro";
+import CodeBlock from "../../components/CodeBlock.astro";
+import Title from "../../components/Title.astro";
+---
+
+<Slide>
+	<Title title="Typescript" punctuation="..." />
+</Slide>
+
+<Slide>
+	<Title title="Typescript" punctuation="..." />
+	<div style={{
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+		flexDirection: "column"
+	}}>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" style={{
+			width: '200px'
+		}}/>
+		<p>ℹ️ Langage de programmation qui a pour but d'améliorer et de sécuriser la production de code JavaScript.</p>
+		<Link url="https://www.typescriptlang.org/" />
+	</div>
+</Slide>
+
+<Slide>
+	<CodeBlock lang="Typescript" lines="|1|2|4|5">
+		{`const Name: string = "Toto" // ✅
+const Age: number = 12 // ✅
+
+const Surname: string = false // ❌
+const YearOfBirth: number = "1998" // ❌
+			`}
+	</CodeBlock>
+</Slide>
+
+<!-- JSDoc -->
+<Slide>
+	<Title title="JsDoc" punctuation="..." />
+</Slide>
+
+<Slide>
+	<Title title="JsDoc" punctuation="..." />
+
+	<img src="https://miro.medium.com/v2/resize:fit:1131/1*HWCZD0bVvxm4EgCgLajc5g.png" style={{
+		width: '400px',
+		borderRadius: '15px'
+	}}/>
+	<p>ℹ️ Langage de balisage utilisé pour documenter du code source JavaScript.</p>
+
+	<Link url="https://jsdoc.app/" />
+</Slide>
+
+<Slide>
+	<Title title="JsDoc" punctuation="..." />
+	<CodeBlock lang="Javascript" lines="">
+		{`/**
+ * Function to add a book to the list.
+ *
+ * @constructor
+ *
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
+function addBook(title, author) {
+	blablabla...
+}
+			`}
+	</CodeBlock>
+</Slide>
+
+<Slide>
+	<Title title="JsDoc" punctuation="..." />
+	<CodeBlock lang="bash">
+		{`# Commande de génération de la documentation 📖
+
+jsdoc book.js
+			`}
+	</CodeBlock>
+</Slide>
