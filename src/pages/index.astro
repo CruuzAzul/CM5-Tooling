@@ -1,15 +1,36 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Title from "../slides/Title.astro";
-import WhyAstro from "../slides/WhyAstro.astro";
+import Title from "../slides/Introduction.astro";
+import Why from "../slides/Why.astro";
+import Presentation from "../slides/presentation/Presentation.astro";
+import IntroQuote from "../slides/storyTelling/IntroQuote.astro";
+import Project from "../slides/project/Project.astro";
 ---
 
 <Layout title="My Awesome Talk Title">
   <main class="reveal">
     <div class="slides">
       <Title />
-      <WhyAstro />
-      <!-- Put your slides here -->
+			<!-- Intro -->
+      <Why />
+			<Presentation />
+			<IntroQuote />
+
+      <!-- Balade dans le projet -->
+			<Project />
+
+			<!-- Analyse du code (Packages, eslint, prettier...) POPS -->
+
+			<!-- Petites astuces (IA...) Mick -->
+
+			<!-- CI / CD Mick -->
+
+			<!-- Pourquoi on fait tout ça ? Mick -->
+
+			<!-- Build / Deploiement / Changelog... POPS -->
+
+			<!-- Suivi de prod / Monitoring... -->
+
     </div>
   </main>
 </Layout>

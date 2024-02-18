@@ -1,0 +1,74 @@
+---
+import Slide from "../../components/Slide.astro";
+import Title from "../../components/Title.astro";
+
+import GitSchema from "../../assets/images/git_schema.jpeg?url"
+---
+
+<Slide>
+	<Title title="👏🏼 Utilisation de Git" punctuation=" !" style={{
+		justifyContent: "center",
+		fontSize: "5rem"
+	}} />
+</Slide>
+
+<section data-background-color="white">
+	<Title title="Les bases de Git" punctuation=" !" style={{
+		justifyContent: "center",
+		fontSize: "5rem"
+	}} />
+	<img src={GitSchema} style={{width: "80%"}} />
+</section>
+
+<Slide>
+	<Title title="Premier problème" punctuation="..." style={{
+		justifyContent: "center",
+		fontSize: "5rem"
+	}} />
+</Slide>
+
+<Slide>
+	<Title title="Premier problème" punctuation="..." style={{
+		justifyContent: "center",
+		fontSize: "5rem"
+	}} />
+	<Title title="Mauvaise utilisation de Git" punctuation=" !" style={{
+		justifyContent: "center",
+		fontSize: "3rem"
+	}} />
+</Slide>
+
+<Slide>
+	<Title title="Mauvaise utilisation de Git" punctuation=" !" />
+	<ul>
+		<li>Des noms commits inadaptés</li>
+		<li class="fragment">Des fichiers qui ne devraient pas être là</li>
+		<li class="fragment">Aucune merge request / pull request</li>
+	</ul>
+</Slide>
+
+<Slide>
+	<Title title="Mauvaise utilisation de Git" punctuation=" !" />
+	<ul>
+		<li>Des noms commits inadaptés</li>
+		<li>Des fichiers qui ne devraient pas être là</li>
+		<li>Aucune merge request / pull request</li>
+	</ul>
+
+	<Title title="Besoin d'un petit nettoyage 🧹" style={{
+		justifyContent: "center",
+		paddingTop: "6rem",
+		fontSize: "3rem"
+	}} />
+</Slide>
+
+<Slide>
+	<Title title="Pourquoi utiliser GitLab / Github ..." punctuation=" !" />
+	<ul>
+		<li>Interface de visualisation de projets Git</li>
+		<li class="fragment">Utilisation des merge request / pull request</li>
+		<li class="fragment">Gestion de projets avec les issues et board</li>
+		<li class="fragment">Exécution de script et actions pour de la CI/CD</li>
+		<li class="fragment">Espace de documentation (Wiki...)</li>
+	</ul>
+</Slide>

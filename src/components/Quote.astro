@@ -1,0 +1,22 @@
+---
+import Slide from "./Slide.astro";
+
+interface Props {
+	quote: string;
+	punctuation: string;
+}
+
+const { quote, punctuation } = Astro.props;
+---
+
+<Slide>
+	<img src="https://cdn-icons-png.flaticon.com/512/4338/4338295.png" style={{
+		width: "50px"
+	}}>
+	<p style={{
+		fontWeight: "500"
+	}}>{quote}<span style={{ color: "#2ec7cc" }}>{punctuation}</span></p>
+	<img src="https://cdn-icons-png.flaticon.com/512/4338/4338295.png" style={{
+		width: "50px"
+	}}>
+</Slide>
