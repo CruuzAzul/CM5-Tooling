@@ -5,6 +5,8 @@ import Why from "../slides/Why.astro";
 import Presentation from "../slides/presentation/Presentation.astro";
 import IntroQuote from "../slides/storyTelling/IntroQuote.astro";
 import Project from "../slides/project/Project.astro";
+import Tips from "../slides/tips/Tips.astro";
+import IA from "../slides/tips/IA.astro";
 ---
 
 <Layout title="My Awesome Talk Title">
@@ -12,9 +14,11 @@ import Project from "../slides/project/Project.astro";
     <div class="slides">
       <Title />
 			<!-- Intro -->
-      <Why />
-			<Presentation />
-			<IntroQuote />
+			<section>
+				<Why />
+				<Presentation />
+				<IntroQuote />
+			</section>
 
       <!-- Balade dans le projet -->
 			<Project />
@@ -22,6 +26,8 @@ import Project from "../slides/project/Project.astro";
 			<!-- Analyse du code (Packages, eslint, prettier...) POPS -->
 
 			<!-- Petites astuces (IA...) Mick -->
+			<Tips />
+			<IA />
 
 			<!-- CI / CD Mick -->
 

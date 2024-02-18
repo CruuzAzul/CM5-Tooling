@@ -3,6 +3,7 @@ import Slide from "../../components/Slide.astro";
 import Title from "../../components/Title.astro";
 
 import GitSchema from "../../assets/images/git_schema.jpeg?url"
+import Demo from "../../components/Demo.astro";
 ---
 
 <Slide>
@@ -62,6 +63,26 @@ import GitSchema from "../../assets/images/git_schema.jpeg?url"
 	}} />
 </Slide>
 
+<Demo />
+
+<Slide>
+	<Title title="Pourquoi utiliser GitLab / Github ..." punctuation=" !" />
+	<div style={{
+		display: "flex",
+		flexWrap: "wrap",
+		justifyContent: "center",
+		alignItems: "center",
+		gap: "2rem"
+	}}>
+		<img src="https://penseeartificielle.fr/wp-content/uploads/2017/09/github-logo.png" alt="Gitlab logo">
+		<img src="https://images.ctfassets.net/xz1dnu24egyd/1hnQd13UBU7n5V0RsJcbP3/769692e40a6d528e334b84f079c1f577/gitlab-logo-100.png" alt="Github logo">
+	</div>
+	<Title punctuation="..." style={{
+		justifyContent: "center",
+		fontSize: "5rem"
+	}}/>
+</Slide>
+
 <Slide>
 	<Title title="Pourquoi utiliser GitLab / Github ..." punctuation=" !" />
 	<ul>
@@ -76,3 +97,9 @@ import GitSchema from "../../assets/images/git_schema.jpeg?url"
 		<li class="fragment">Espace de documentation (Wiki...)</li>
 	</ul>
 </Slide>
+
+<style>
+img {
+	width: 400px;
+}
+</style>
