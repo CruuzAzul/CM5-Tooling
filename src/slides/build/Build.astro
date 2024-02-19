@@ -1,0 +1,17 @@
+---
+import Title from "../../components/Title.astro";
+import Slide from "../../components/Slide.astro";
+import Bundlers from "./Bundlers.astro";
+import Servers from "./Servers.astro";
+---
+<section>
+	<Slide>
+		<Title title="Notre app est super belle ! Et maintenant" punctuation=" ?" style={{
+			justifyContent: "center",
+			fontSize: "5rem"
+		}}/>
+	</Slide>
+
+	<Bundlers />
+	<Servers />
+</section>
