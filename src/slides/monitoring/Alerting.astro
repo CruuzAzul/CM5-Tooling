@@ -1,0 +1,34 @@
+---
+import Slide from "../../components/Slide.astro";
+import Title from "../../components/Title.astro";
+import AlertingSlack from "../../assets/images/alerting_slack.png?url";
+import AlertingMail from "../../assets/images/alerting_mail.png?url";
+---
+<Slide>
+	<Title title="Restons informé" punctuation=" !"/>
+</Slide>
+
+<Slide>
+	<Title title="Restons informé" punctuation=" !"/>
+	<div class="alerting">
+		<img src={AlertingMail} style={{borderRadius: '15px'}}/>
+		<p>📬 Par mail</p>
+	</div>
+</Slide>
+
+<Slide>
+	<Title title="Restons informé" punctuation=" !"/>
+	<div class="alerting">
+		<img src={AlertingSlack} style={{borderRadius: '15px'}}/>
+		<p>💬 Par slack</p>
+	</div>
+</Slide>
+
+<style>
+	.alerting {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+</style>
