@@ -1,0 +1,32 @@
+---
+import Title from "../components/Title.astro";
+import Slide from "../components/Slide.astro";
+import Speakers from "./presentation/Speakers.astro";
+
+import PopsLinkedin from "../assets/images/pops_linkedin.png?url"
+import MickLinkedin from "../assets/images/mick_linkedin.png?url"
+---
+
+<Slide>
+	<Title title="Merci" punctuation=" !" style={{
+		justifyContent: "center",
+		fontSize: "8rem"
+	}} />
+</Slide>
+
+<Slide>
+	<Speakers />
+
+	<div style={{
+		display: "flex",
+		justifyContent: "space-evenly",
+		alignItems: "center"
+	}}>
+		<img src={MickLinkedin} style={{
+			width: "200px"
+		}}/>
+		<img src={PopsLinkedin} style={{
+			width: "200px"
+		}}/>
+	</div>
+</Slide>

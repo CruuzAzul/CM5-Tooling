@@ -1,0 +1,82 @@
+---
+import Slide from "../../components/Slide.astro";
+import Title from "../../components/Title.astro";
+---
+
+<section>
+	<Slide>
+		<Title title="En conclusion" punctuation="" style={{
+			justifyContent: "center",
+			fontSize: "5rem"
+		}} />
+	</Slide>
+
+	<Slide>
+		<Title title="En conclusion" punctuation="" style={{
+			justifyContent: "center",
+			fontSize: "5rem"
+		}} />
+		<Title title="Pourquoi on fait tout ça" punctuation=" ?" style={{
+			justifyContent: "center",
+			fontSize: "3rem"
+		}} />
+	</Slide>
+
+	<Slide>
+		<Title title="Linter, Format, Nommage, pourquoi" punctuation=" ?" />
+		<ul>
+			<li>Améliorer la qualité du code</li>
+			<li class="fragment">Améliorer la consistance et lisibilité du code</li>
+			<ol class="fragment">
+				<li>Plus simple à relire</li>
+				<li>Plus simple à maintenir</li>
+			</ol>
+			<li class="fragment">Automatiser pour gagner en efficacité</li>
+		</ul>
+	</Slide>
+
+	<Slide>
+		<Title title="Linter, Format, Nommage, pourquoi" punctuation=" ?" />
+		<ul>
+			<li>Améliorer la qualité du code</li>
+			<li>Améliorer la consistance et lisibilité du code</li>
+			<ol>
+				<li>Plus simple à relire</li>
+				<li>Plus simple à maintenir</li>
+			</ol>
+			<li>Automatiser pour gagner en efficacité</li>
+		</ul>
+		<Title class="fragment" title="❗On choisit puis on s'y tient" punctuation=" ❗" style={{
+			paddingTop: '4rem',
+			color: '#2ec7cc',
+			justifyContent: "center",
+			fontSize: "4rem"
+		}} />
+	</Slide>
+
+	<Slide>
+		<Title title="CI/CD, Alerting, Monitoring, pourquoi" punctuation=" ?" />
+		<ul>
+			<li>Automatiser pour gagner en efficacité</li>
+			<li class="fragment">Permettre la détection précoce des erreurs</li>
+			<li class="fragment">Livrer en continue et de manière itérative</li>
+			<li class="fragment">Surveillance et dépannage des applications</li>
+		</ul>
+	</Slide>
+
+	<Slide>
+		<Title title="CI/CD, Alerting, Monitoring, pourquoi" punctuation=" ?" />
+		<ul>
+			<li>Automatiser pour gagner en efficacité</li>
+			<li>Permettre la détection précoce des erreurs</li>
+			<li>Livrer en continue et de manière itérative</li>
+			<li>Surveillance et dépannage des applications</li>
+		</ul>
+		<Title class="fragment" title="💸 Une petite erreur peut coûter cher" punctuation="..." style={{
+			paddingTop: '4rem',
+			color: '#2ec7cc',
+			justifyContent: "center",
+			fontSize: "3rem"
+		}} />
+	</Slide>
+</section>

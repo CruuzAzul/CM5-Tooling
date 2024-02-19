@@ -10,49 +10,53 @@ import IA from "../slides/ia/IA.astro";
 import Code from "../slides/code/Code.astro";
 import CICD from "../slides/cicd/CICD.astro";
 import Monitoring from "../slides/monitoring/Monitoring.astro";
+import Conclusion from "../slides/conclusion/Conclusion.astro";
 import Build from "../slides/build/Build.astro";
+import Thanks from "../slides/Thanks.astro";
 ---
 
 <Layout title="My Awesome Talk Title">
-  <main class="reveal">
-    <div class="slides">
-      <Title />
+	<main class="reveal">
+		<div class="slides">
+			<Title/>
 			<!-- Intro Mick -->
 			<section>
-				<Why />
-				<Presentation />
-				<IntroQuote />
+				<Why/>
+				<Presentation/>
+				<IntroQuote/>
 			</section>
 
-      <!-- Balade dans le projet Mick -->
-			<Project />
+			<!-- Balade dans le projet -->
+			<Project/>
 
-			<!-- Analyse du code (Packages, eslint, prettier...) POPS -->
+			<!-- Analyse du code (Packages, eslint, prettier...) -->
 			<!-- Ajouter des slides de demo pour eslint et prettier -->
-			<Code />
+			<Code/>
 
-			<!-- Petites astuces Mick -->
-			<Tips />
+			<!-- Petites astuces -->
+			<Tips/>
 
-			<!-- IA TODO -->
-			<IA />
+			<!-- IA -->
+			<IA/>
 
 			<!-- CI / CD POPS -->
-			<CICD />
+			<CICD/>
 
-			<!-- Pourquoi on fait tout ça ? TODO -->
+			<!-- Build / Deploiement / Changelog... -->
+			<Build/>
 
-			<!-- Build / Deploiement / Changelog... TODO -->
-			<Build />
+			<!-- Suivi de prod / Monitoring... -->
+			<Monitoring/>
 
-			<!-- Suivi de prod / Monitoring... TODO -->
-			<Monitoring />
+			<!-- Pourquoi on fait tout ça ? -->
+			<Conclusion/>
 
+			<Thanks />
 
-    </div>
-  </main>
+		</div>
+	</main>
 </Layout>
 
 <style lang="scss">
-  // Sass is installed by default, you can change if you prefer Stylus or Less
+	// Sass is installed by default, you can change if you prefer Stylus or Less
 </style>
